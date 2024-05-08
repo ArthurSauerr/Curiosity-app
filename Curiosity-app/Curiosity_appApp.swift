@@ -2,7 +2,7 @@
 //  Curiosity_appApp.swift
 //  Curiosity-app
 //
-//  Created by Lawson Beltrame on 08/05/24.
+//  Created by Arthur Sauer Germano on 08/05/24.
 //
 
 import SwiftUI
