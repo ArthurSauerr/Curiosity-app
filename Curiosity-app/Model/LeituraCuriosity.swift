@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LeituraCuriosity: Codable, Identifiable {
+struct LeituraCuriosity: Codable, Identifiable, Hashable {
   
     let id: String
     let text: String

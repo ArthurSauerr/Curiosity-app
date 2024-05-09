@@ -11,15 +11,13 @@ struct RndCuriosityView: View {
     @StateObject var leituraCuriosa = CuriosityInfoAPIViewModel()
     
     var body: some View {
-        ZStack{
-            Rectangle()
-                .foregroundStyle(.black)
-                .ignoresSafeArea()
-            VStack{
-                
+        VStack{
+            ForEach(leituraCuriosa.leituras, id: \.self){ leitura in
+                Text("\(leitura.text)")
+                    .padding()
             }
         }.onAppear(){
-            leituraCuriosa.fetchAllLeituras()
+            leituraCuriosa.fetchRandomFact()
         }
     }
 }
