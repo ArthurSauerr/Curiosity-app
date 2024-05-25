@@ -16,6 +16,11 @@ struct ContentView: View {
                         Image(systemName: "house")
                         Text("Curiosidade")
                     }
+                DayCuriosityView()
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Daily")
+                    }
             }
         }
     }
